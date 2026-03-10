@@ -7,11 +7,13 @@ on:
   workflow_dispatch: # For manual trigger
 
 permissions:
-  contents: write
-  pull-requests: write
+  # Permission for writing commits and creating PRs is given through
+  # the bot account PAT.
+  contents: read
 
 jobs:
   sync:
+    environment: genkit skills automerger cron
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -43,3 +45,4 @@ jobs:
           commit-message: "chore: sync updated skills"
           title: "🤖 Sync updated skills from Genkit"
           branch: "sync-skills"
+          token: ${{ secrets.OSS_BOT_AUTOMERGER_PAT }}
