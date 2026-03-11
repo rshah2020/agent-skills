@@ -9,7 +9,7 @@ The agent skills and MCP server should be installed globally for consistent acce
 ### 1. Install Firebase Skills
 Run the following command to install the Firebase agent skills:
 ```bash
-npx skills add firebase/agent-skills --agent github-copilot --all --global
+npx skills add firebase/agent-skills --agent github-copilot --skill "*" --yes --global
 ```
 
 ### 2. Configure Firebase MCP Server

@@ -9,42 +9,41 @@ This skill documents the bare minimum setup required for a full Firebase experie
 
 ## 1. Verify Node.js
 - **Action**: Run `node --version`.
-- **Handling**: Ensure Node.js is installed and the version is `>= 24`. If Node.js is missing or `< v24`, install it based on the operating system:
+- **Handling**: Ensure Node.js is installed and the version is `>= 20`. If Node.js is missing or `< v20`, install it based on the operating system:
+
+  **Recommended: Use a Node Version Manager**
+  This avoids permission issues when installing global packages.
 
   **For macOS or Linux:**
-  We recommend using `nvm` (Node Version Manager):
-
-  1. Install `nvm`:
+  1. Guide the user to the [official nvm repository](https://github.com/nvm-sh/nvm#installing-and-updating).
+  2. Request the user to manually install `nvm` and reply when finished. **Stop and wait** for the user's confirmation.
+  3. Make `nvm` available in the current terminal session by sourcing the appropriate profile:
      ```bash
-     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
-     ```
-  2. Make `nvm` available in the current session. You normally need to restart the terminal or source one of the following configuration files based on the active shell:
-     ```bash
-     # For Bash Shell
+     # For Bash
      source ~/.bash_profile
      source ~/.bashrc
 
      # For Zsh
      source ~/.zprofile
      source ~/.zshrc
-
-     # For non-bash or sh shells, often used on Debian-based systems
-     source ~/.profile
      ```
-  3. Install Node.js 24:
+  4. Install Node.js:
      ```bash
      nvm install 24
      nvm use 24
      ```
 
   **For Windows:**
-  1. Guide the user to the [download page](https://nodejs.org/en/download) or download the Windows packages [here](https://nodejs.org/download/release/latest-v24.x/).
-  2. Request the user to manually install Node.js and reply when finished. **Stop and wait** for the user's confirmation.
-  3. After the user confirms, check if Node.js is available using the following command:
+  1. Guide the user to download and install [nvm-windows](https://github.com/coreybutler/nvm-windows/releases).
+  2. Request the user to manually install `nvm-windows` and Node.js, and reply when finished. **Stop and wait** for the user's confirmation.
+  3. After the user confirms, verify Node.js is available:
      ```bash
      node --version
      ```
 
+  **Alternative: Official Installer**
+  1. Guide the user to download and install the LTS version from [nodejs.org](https://nodejs.org/en/download).
+  2. Request the user to manually install Node.js and reply when finished. **Stop and wait** for the user's confirmation.
 
 ## 2. Verify Firebase CLI
 The Firebase CLI is the primary tool for interacting with Firebase services.

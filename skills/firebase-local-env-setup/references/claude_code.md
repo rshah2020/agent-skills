@@ -36,7 +36,7 @@ claude mcp add firebase npx -- -y firebase-tools@latest mcp
 
 ### 2. Add the Agent Skills
 ```bash
-npx skills add firebase/agent-skills --agent claude-code --all --global
+npx skills add firebase/agent-skills --agent claude-code --skill "*" --yes --global
 ```
 
 ### 3. Verify
