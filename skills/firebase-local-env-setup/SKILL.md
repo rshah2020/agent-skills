@@ -1,9 +1,9 @@
 ---
-name: firebase-getting-started
+name: firebase-local-env-setup
 description: Bare minimum setup for getting started with Firebase for the agent. This covers Node.js installation, Firebase CLI availability, login, and MCP server installation. Use this to ensure the local environment is fully prepared before using Firebase.
 ---
 
-# Firebase Getting Started
+# Firebase Local Environment Setup
 
 This skill documents the bare minimum setup required for a full Firebase experience for the agent. Before starting to use any Firebase features, you MUST verify that each of the following steps has been completed.
 
