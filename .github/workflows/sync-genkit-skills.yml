@@ -43,6 +43,7 @@ jobs:
         with:
           path: firebase-skills
           commit-message: "chore: sync updated skills"
-          title: "🤖 Sync updated skills from Genkit"
+          title: "chore: 🤖 Sync updated skills from Genkit"
           branch: "sync-skills"
+          committer: Google Open Source Bot <firebase-oss-bot@google.com>
           token: ${{ secrets.OSS_BOT_AUTOMERGER_PAT }}
