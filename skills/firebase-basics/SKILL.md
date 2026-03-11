@@ -7,6 +7,7 @@ description: This skill demonstrates the core principles and workflow of using F
 Make sure you follow `firebase-local-env-setup` skill first. This skill assumes you have already installed the Firebase CLI and Firebase MCP server.
 
 ## Core Workflow
+
 ### 1. Authentication
 
 Log in to Firebase:
