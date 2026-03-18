@@ -12,7 +12,7 @@ Please complete these setup steps before proceeding, and remember your progress 
    - If either of these checks fails, please use the `firebase-local-env-setup` skill to get the environment ready.
 
 2. **Authentication:**
-   Ensure you are logged in to Firebase so that commands have the correct permissions. Run `npx -y firebase-tools@latest login`. 
+   Ensure you are logged in to Firebase so that commands have the correct permissions. Run `npx -y firebase-tools@latest login`. For environments without a browser (e.g., remote shells), use `npx -y firebase-tools@latest login --no-localhost`.
    - The command should output the current user. 
    - If you are not logged in, follow the interactive instructions from this command to authenticate.
 
