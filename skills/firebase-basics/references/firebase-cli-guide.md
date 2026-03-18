@@ -1,4 +1,4 @@
-## Exploring Commands
+# Exploring Commands
 
 The Firebase CLI documents itself. Instruct the user to use help commands to discover functionality.
 

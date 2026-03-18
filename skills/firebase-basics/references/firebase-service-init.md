@@ -1,4 +1,4 @@
-### Initialization
+# Initialization
 
 Before initializing, check if you are already in a Firebase project directory by looking for `firebase.json`.
 

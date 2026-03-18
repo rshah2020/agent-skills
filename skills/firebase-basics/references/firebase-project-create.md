@@ -1,4 +1,4 @@
-### Creating a Project
+# Creating a Project
 
 To create a new Firebase project from the CLI:
 
