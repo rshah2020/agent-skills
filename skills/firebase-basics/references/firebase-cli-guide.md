@@ -1,6 +1,6 @@
 # Exploring Commands
 
-The Firebase CLI documents itself. Instruct the user to use help commands to discover functionality.
+The Firebase CLI documents itself. Use help commands to discover functionality.
 
 - **Global Help**: List all available commands and categories.
   ```bash
