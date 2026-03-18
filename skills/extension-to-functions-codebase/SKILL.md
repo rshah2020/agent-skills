@@ -23,7 +23,7 @@ If there are any tests in the extensions codebase, be sure to run them after the
 
 ### Verify you are ready for the task
 If an extensions codebase has a feature that you do not know how to handle yet, such as
-lifecycle hooks or specific IAM roles via `iamRoles` in `extension.yaml`, stop and tell the user that you cannot handle this task yet.
+lifecycle hooks or specific IAM roles via `lifecycleEvents` or `iamRoles` in `extension.yaml`, stop and tell the user that you cannot handle this task yet.
 
 ### API Enablement
 For all API dependencies listed in `extension.yaml`, add a comment to index.js and inform the user in your final response to manually enable them.
