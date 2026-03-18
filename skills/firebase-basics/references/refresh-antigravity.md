@@ -10,7 +10,9 @@ Antigravity relies on `npx skills`. Updates should prioritize the global level; 
    ```
 2. **Check the installed skills:** Check installed skills in both project and global levels, run:
    ```bash
+   # Check project-level skills
    npx -y skills list --agent antigravity
+   # Check global-level skills
    npx -y skills list --agent antigravity --global
    ```
 3. **Update Installed Skills:** Run the following to update all currently installed skills to their latest versions:

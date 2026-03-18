@@ -12,7 +12,9 @@ Replace `<AGENT_NAME>` with the actual agent name, which can be found [here](htt
    ```
 2. **Check the installed skills:** Check installed skills in both project and global levels, run:
    ```bash
+   # Check project-level skills
    npx -y skills list --agent <AGENT_NAME>
+   # Check global-level skills
    npx -y skills list --agent <AGENT_NAME> --global
    ```
 3. **Update Installed Skills:** Run the following to update all currently installed skills to their latest versions:
